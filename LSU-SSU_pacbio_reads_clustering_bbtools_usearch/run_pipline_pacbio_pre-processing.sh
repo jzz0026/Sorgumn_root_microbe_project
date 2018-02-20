@@ -64,7 +64,15 @@ reformat.sh in=out_0012_rl_trimmed.fq out=out_0012_rl_trimmed_qfiltered.fq maq=2
 reformat.sh in=out_0013_rl_trimmed.fq out=out_0013_rl_trimmed_qfiltered.fq maq=20 minlen=1400 maxlen=1600 ow
 reformat.sh in=out_0014_rl_trimmed.fq out=out_0014_rl_trimmed_qfiltered.fq maq=20 minlen=1400 maxlen=1600 ow
 
+#rename
+cat out_0001_rl_trimmed_qfiltered.fq | awk '{print (NR%4 == 1) ? “@1st_1_” ++i-1 : $0}' | paste - - - - | sed 's/^@/>/g'| cut -f1-2 | tr '\t' '\n' > re_0001_rl_trimmed_qfiltered.fq
+
+
 #incorporate trimmed reads of all samples
-cat out_*_rl_trimmed_qfiltered.fq > all_rl_trimmed_qfiltered.fq
+cat re_*_rl_trimmed_qfiltered.fq > all_rl_trimmed_qfiltered.fq
+
+#annotate (remove) primers and make all seqs into a single orientation followed by filter by length of 1250 and remove chimeric reads (Usearch reference) on Geneious. 
+
+
 
 
