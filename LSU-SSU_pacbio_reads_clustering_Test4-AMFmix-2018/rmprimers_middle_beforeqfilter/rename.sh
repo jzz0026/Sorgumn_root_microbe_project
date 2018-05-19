@@ -1,0 +1,14 @@
+cat ../out_0001_rl_trimmed.fq | awk '{print (NR%4 == 1) ? "@Test4-AMFmix-2018_1_" ++i-1 : $0}' > re_0001_rl_trimmed.fq
+cat ../out_0002_rl_trimmed.fq | awk '{print (NR%4 == 1) ? "@Test4-AMFmix-2018_2_" ++i-1 : $0}' > re_0002_rl_trimmed.fq
+cat ../out_0003_rl_trimmed.fq | awk '{print (NR%4 == 1) ? "@Test4-AMFmix-2018_3_" ++i-1 : $0}' > re_0003_rl_trimmed.fq
+cat ../out_0004_rl_trimmed.fq | awk '{print (NR%4 == 1) ? "@Test4-AMFmix-2018_4_" ++i-1 : $0}' > re_0004_rl_trimmed.fq
+cat ../out_0005_rl_trimmed.fq | awk '{print (NR%4 == 1) ? "@Test4-AMFmix-2018_5_" ++i-1 : $0}' > re_0005_rl_trimmed.fq
+cat ../out_0006_rl_trimmed.fq | awk '{print (NR%4 == 1) ? "@Test4-AMFmix-2018_6_" ++i-1 : $0}' > re_0006_rl_trimmed.fq
+cat ../out_0007_rl_trimmed.fq | awk '{print (NR%4 == 1) ? "@Test4-AMFmix-2018_7_" ++i-1 : $0}' > re_0007_rl_trimmed.fq
+cat ../out_0008_rl_trimmed.fq | awk '{print (NR%4 == 1) ? "@Test4-AMFmix-2018_8_" ++i-1 : $0}' > re_0008_rl_trimmed.fq
+cat ../out_0009_rl_trimmed.fq | awk '{print (NR%4 == 1) ? "@Test4-AMFmix-2018_9_" ++i-1 : $0}' > re_0009_rl_trimmed.fq
+cat ../out_0010_rl_trimmed.fq | awk '{print (NR%4 == 1) ? "@Test4-AMFmix-2018_10_" ++i-1 : $0}' > re_0010_rl_trimmed.fq
+cat ../out_0011_rl_trimmed.fq | awk '{print (NR%4 == 1) ? "@Test4-AMFmix-2018_11_" ++i-1 : $0}' > re_0011_rl_trimmed.fq
+cat ../out_0012_rl_trimmed.fq | awk '{print (NR%4 == 1) ? "@Test4-AMFmix-2018_12_" ++i-1 : $0}' > re_0012_rl_trimmed.fq
+cat ../out_0013_rl_trimmed.fq | awk '{print (NR%4 == 1) ? "@Test4-AMFmix-2018_13_" ++i-1 : $0}' > re_0013_rl_trimmed.fq
+cat ../out_0014_rl_trimmed.fq | awk '{print (NR%4 == 1) ? "@Test4-AMFmix-2018_14_" ++i-1 : $0}' > re_0014_rl_trimmed.fq
