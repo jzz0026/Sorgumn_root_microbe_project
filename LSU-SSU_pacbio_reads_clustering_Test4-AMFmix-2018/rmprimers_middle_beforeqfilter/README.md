@@ -3,11 +3,8 @@ bash run_pipline_pacbio_pre-processing.sh
 ## generate primers
 LSU_SSUmCf_transform.sh
 
-## set all reads into one orientation based on primers
-bash sort_SSUmCf_LSUmCf.sh
-
-## rm primers in the middle
-bash extract_noprimers_middle.sh
+## set all reads into one orientation based on primers, trim primers and rm primers in the middle
+bash sort_orien_trim_filter.sh
 
 ## clustering using both usearch and bbtools
 mkdir usearch_analysis
